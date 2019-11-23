@@ -13,7 +13,7 @@ IMG_SIZE = 100
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-model = load_model("food_model")
+model = load_model("food_model.h5")
 
 @app.route("/image-analyze", methods=["POST"])
 def image_analyze():
